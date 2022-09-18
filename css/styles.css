@@ -609,17 +609,40 @@ p {
 
 .register-form-element {
   position: relative;
+
   display: block;
   margin-bottom: 10px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+/* identical to box height */
+  letter-spacing: 0.01em;
+
+  color: #757575;
 }
 
 .register-form-input {
   display: block;
+  width: 100%;
+  height: 40px;
+
+  outline-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding-left: 30px;
+
   margin-top: 4px;
 }
 
 .register-form-icon {
   position: absolute;
+  left: 15px;
+  top: 50%;
   
 }
 
