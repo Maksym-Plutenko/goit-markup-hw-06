@@ -472,11 +472,58 @@
     <!--Modal window-->
     <div class="backdrop modal-element is-hidden" data-modal>
       <div class="modal-window modal-element">
+        <!--close button-->
         <button class="modal-close-button modal-element" type="button" data-modal-close>
           <svg class="close-button-icon modal-element" width="11px" height="11px">
             <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
+
+        <!--register form-->
+        <form action="" class="register-form">
+          <srong class="register-form-title">Залиште свої дані, ми вам передзвонимо</srong>
+          <div class="register-form-group" role="group">
+
+            <label class="reg-name-label register-form-element">
+              Ім'я
+              <input type="text" class="reg-name-input register-form-input">
+              <svg class="reg-name-icon register-form-icon" width="12px" height="12px">
+                <use href="./images/icons.svg#form-user"></use>
+              </svg>
+            </label>
+
+            <label class="reg-phone-label register-form-element">
+              Телефон
+              <input type="tel" class="reg-phone-input register-form-input">
+              <svg class="reg-phone-icon register-form-icon" width="13px" height="13px">
+                <use href="./images/icons.svg#form-phone"></use>
+              </svg>
+            </label>
+
+            <label class="reg-mail-label register-form-element">
+              Пошта
+              <input type="email" class="reg-mail-input register-form-input">
+              <svg class="reg-mail-icon register-form-icon" width="15px" height="12px">
+                <use href="./images/icons.svg#form-mail"></use>
+              </svg>
+            </label>
+
+            <label class="reg-comment-label register-form-element">
+              Коментар
+              <textarea name="" cols="30" rows="10" class="reg-comment-textarea register-form-input"></textarea>
+            </label>
+
+            <input type="checkbox" class="reg-checkbox">
+            <label for="" class="reg-checkbox-label">Погоджуюся з розсилкою та приймаю  <a href="" class="reg-checkbox-link">Умови договору</a></label>
+            <svg class="reg-checkbox-icon" width="16px" height="15px">
+              <use href="./images/icons.svg#form-checkbox"></use>
+            </svg>
+            <svg class="reg-checkbox-icon-checked" width="16px" height="15px">
+              <use href="./images/icons.svg#form-checkbox-checked"></use>
+            </svg>
+
+          </div>
+        </form>
       </div>
     </div>
 

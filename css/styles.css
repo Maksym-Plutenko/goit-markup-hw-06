@@ -506,6 +506,11 @@ p {
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
 
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   background: var(--window--bg-main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -540,6 +545,82 @@ p {
 
 .is-hidden .modal-window {
   transform: translate(-50%, -50%) scale(0.5);
+}
+
+  /* register form of modal window */
+  
+
+  .register-form {
+  }
+  .register-form-title {
+  }
+  .register-form-group {
+  }
+  .reg-name-label {
+  }
+  .reg-name-input {
+  }
+  .reg-name-icon {
+  }
+  .reg-phone-label {
+  }
+  .reg-phone-input {
+  }
+  .reg-phone-icon {
+  }
+  .reg-mail-label {
+  }
+  .reg-mail-input {
+  }
+  .reg-mail-icon {
+  }
+  .reg-comment-label {
+  }
+  .reg-comment-textarea {
+  }
+  .reg-checkbox {
+  }
+  .reg-checkbox-label {
+  }
+  .reg-checkbox-link {
+  }
+  .reg-checkbox-icon {
+  }
+  .reg-checkbox-icon-checked {
+  }
+
+
+.register-form-title {
+  display: block;
+  /* font-family: 'Roboto';
+  font-style: normal; */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  /* letter-spacing: 0.03em; */
+  /* color: #212121; */
+  margin-bottom: 12px;
+}
+
+/* .reg-name-input {
+  display: block;
+} */
+
+.register-form-element {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.register-form-input {
+  display: block;
+  margin-top: 4px;
+}
+
+.register-form-icon {
+  position: absolute;
+  
 }
 
 /* Portfolio page */
