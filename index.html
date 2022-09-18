@@ -483,46 +483,54 @@
         <form action="" class="register-form">
           <srong class="register-form-title">Залиште свої дані, ми вам передзвонимо</srong>
           <div class="register-form-group" role="group">
-
             <label class="reg-name-label register-form-element">
               Ім'я
-              <input type="text" class="reg-name-input register-form-input">
-              <svg class="reg-name-icon register-form-icon" width="12px" height="12px">
-                <use href="./images/icons.svg#form-user"></use>
-              </svg>
+              <div class="register-form-field">
+                <input type="text" class="reg-name-input register-form-input" />
+                <svg class="reg-name-icon register-form-icon" width="12px" height="12px">
+                  <use href="./images/icons.svg#form-user"></use>
+                </svg>
+              </div>
             </label>
 
             <label class="reg-phone-label register-form-element">
               Телефон
-              <input type="tel" class="reg-phone-input register-form-input">
-              <svg class="reg-phone-icon register-form-icon" width="13px" height="13px">
-                <use href="./images/icons.svg#form-phone"></use>
-              </svg>
+              <div class="register-form-field">
+                <input type="tel" class="reg-phone-input register-form-input" />
+                <svg class="reg-phone-icon register-form-icon" width="13px" height="13px">
+                  <use href="./images/icons.svg#form-phone"></use>
+                </svg>
+              </div>
             </label>
 
             <label class="reg-mail-label register-form-element">
               Пошта
-              <div class="register-form-fild">
-              <input type="email" class="reg-mail-input register-form-input">
-              <svg class="reg-mail-icon register-form-icon" width="15px" height="12px">
-                <use href="./images/icons.svg#form-mail"></use>
-              </svg>
+              <div class="register-form-field">
+                <input type="email" class="reg-mail-input register-form-input" />
+                <svg class="reg-mail-icon register-form-icon" width="15px" height="12px">
+                  <use href="./images/icons.svg#form-mail"></use>
+                </svg>
               </div>
             </label>
 
-            <label class="reg-comment-label register-form-element">
+            <label class="reg-comment-label">
               Коментар
-              <textarea name="" cols="30" rows="10" class="reg-comment-textarea register-form-input"></textarea>
+              <textarea name="" class="reg-comment-textarea"></textarea>
             </label>
 
-            <input type="checkbox" class="reg-checkbox">
-            <label for="" class="reg-checkbox-label">Погоджуюся з розсилкою та приймаю  <a href="" class="reg-checkbox-link">Умови договору</a></label>
-            <svg class="reg-checkbox-icon" width="16px" height="15px">
-              <use href="./images/icons.svg#form-checkbox"></use>
-            </svg>
-            <svg class="reg-checkbox-icon-checked" width="16px" height="15px">
-              <use href="./images/icons.svg#form-checkbox-checked"></use>
-            </svg>
+            <div class="register-form-checkbox-group">
+              <input type="checkbox" id="checkbox" class="register-form-checkbox" />
+              <label for="checkbox" class="register-form-checkbox-label"
+                >Погоджуюся з розсилкою та приймаю
+                <a href="" class="register-form-checkbox-link">Умови договору</a></label
+              >
+              <svg class="register-form-checkbox-icon" width="16px" height="15px">
+                <use href="./images/icons.svg#form-checkbox"></use>
+              </svg>
+              <svg class="register-form-checkbox-icon-checked" width="16px" height="15px">
+                <use href="./images/icons.svg#form-checkbox-checked"></use>
+              </svg>
+            </div>
 
           </div>
         </form>

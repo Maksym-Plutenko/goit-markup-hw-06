@@ -603,13 +603,7 @@ p {
   margin-bottom: 12px;
 }
 
-/* .reg-name-input {
-  display: block;
-} */
-
 .register-form-element {
-  position: relative;
-
   display: block;
   margin-bottom: 10px;
 
@@ -625,6 +619,11 @@ p {
   color: #757575;
 }
 
+.register-form-field {
+  position: relative;
+  margin-top: 4px;
+}
+
 .register-form-input {
   display: block;
   width: 100%;
@@ -634,17 +633,71 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  padding-left: 30px;
+  padding-left: 32px;
 
-  margin-top: 4px;
+  font-size: 16px;
+
 }
 
 .register-form-icon {
   position: absolute;
-  left: 15px;
+  left: 21px;
   top: 50%;
-  
+  transform: translate(-50%, -50%);
 }
+
+.reg-comment-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.reg-comment-textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  resize: none;
+
+  margin-top: 4px;
+}
+
+.register-form-checkbox-group {
+  position: relative;
+}
+
+.register-form-checkbox {
+  visibility: hidden;
+}
+
+.register-form-checkbox-label {
+color: #757575;
+}
+
+.register-form-checkbox-link {
+
+}
+
+.register-form-checkbox-icon,
+.register-form-checkbox-icon-checked {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(0, -50%);
+}
+
+.register-form-checkbox-icon-checked {
+  /* visibility: hidden; */
+  opacity: 0;
+}
+
+.register-form-checkbox:checked ~ .register-form-checkbox-icon-checked {
+  opacity: 1;
+}
+
+.register-form-checkbox:checked ~ .register-form-checkbox-icon {
+  opacity: 0;
+}
+
+
 
 /* Portfolio page */
 .filters-list {
