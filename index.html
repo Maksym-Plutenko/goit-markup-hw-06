@@ -470,11 +470,11 @@
     </footer>
 
     <!--Modal window-->
-    <div class="backdrop modal-element is-hidden" data-modal>
-      <div class="modal-window modal-element">
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
         <!--close button-->
-        <button class="modal-close-button modal-element" type="button" data-modal-close>
-          <svg class="close-button-icon modal-element" width="11px" height="11px">
+        <button class="modal-close-button" type="button" data-modal-close>
+          <svg class="close-button-icon" width="11px" height="11px">
             <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
@@ -486,7 +486,7 @@
             <label class="reg-name-label register-form-element">
               Ім'я
               <div class="register-form-field">
-                <input type="text" class="reg-name-input register-form-input" />
+                <input type="text" class="reg-name-input register-form-input" name="user-name"/>
                 <svg class="reg-name-icon register-form-icon" width="12px" height="12px">
                   <use href="./images/icons.svg#form-user"></use>
                 </svg>
@@ -496,7 +496,7 @@
             <label class="reg-phone-label register-form-element">
               Телефон
               <div class="register-form-field">
-                <input type="tel" class="reg-phone-input register-form-input" />
+                <input type="tel" class="reg-phone-input register-form-input" name="user-phone"/>
                 <svg class="reg-phone-icon register-form-icon" width="13px" height="13px">
                   <use href="./images/icons.svg#form-phone"></use>
                 </svg>
@@ -506,7 +506,7 @@
             <label class="reg-mail-label register-form-element">
               Пошта
               <div class="register-form-field">
-                <input type="email" class="reg-mail-input register-form-input" />
+                <input type="email" class="reg-mail-input register-form-input" name="user-email"/>
                 <svg class="reg-mail-icon register-form-icon" width="15px" height="12px">
                   <use href="./images/icons.svg#form-mail"></use>
                 </svg>
@@ -515,13 +515,14 @@
 
             <label class="reg-comment-label">
               Коментар
-              <textarea name="" class="reg-comment-textarea"></textarea>
+              <textarea name="" class="reg-comment-textarea" name="user-comment" placeholder="Введіть текст"></textarea>
             </label>
 
             <div class="register-form-checkbox-group">
               <input type="checkbox" id="checkbox" class="register-form-checkbox" />
               <label for="checkbox" class="register-form-checkbox-label"
-                >Погоджуюся з розсилкою та приймаю
+                >
+                Погоджуюся з розсилкою та приймаю
                 <a href="" class="register-form-checkbox-link">Умови договору</a></label
               >
               <svg class="register-form-checkbox-icon" width="16px" height="15px">
@@ -531,6 +532,8 @@
                 <use href="./images/icons.svg#form-checkbox-checked"></use>
               </svg>
             </div>
+
+            <button class="register-form-button" type="submit">Відправити</button>
 
           </div>
         </form>
