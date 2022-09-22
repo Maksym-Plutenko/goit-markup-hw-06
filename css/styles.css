@@ -73,7 +73,9 @@ body {
 
 /*button general style settings*/
 .front-btn,
-.filters-btn {
+.filters-btn,
+.register-form-btn,
+.subscribe-form-btn {
   font-family: inherit;
   border: none;
   cursor: pointer;
@@ -483,6 +485,75 @@ p {
   background-color: var(--icon-bg-footer-color);
 }
 
+/* subscribe form */
+.subscribe-form {
+  padding-left: 23px;
+}
+
+.subscribe-form-title {
+  display: block;
+
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--light-text-color);
+
+  margin-bottom: 20px;
+}
+
+.subscribe-form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.subscribe-form-input {
+  width: 385px;
+  height: 50px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-size: 16px;
+  color: var(--light-text-color);
+
+  outline: none;
+  background: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-form-input::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--light-text-color);
+
+  background: var(--button-bg-main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 /* Modal window */
 .backdrop {
   position: fixed;
@@ -556,7 +627,7 @@ p {
   transform: translate(-50%, -50%) scale(0.5);
 }
 
-  /* register form of modal window */
+/* register form of modal window */
 .register-form-title {
   display: block;
 
@@ -603,7 +674,7 @@ p {
   padding-left: 32px;
   font-size: 16px;
 
-    /* input style reset */
+  /* input style reset */
   border: none;
   background: none;
   outline: none;
@@ -649,15 +720,15 @@ p {
   color: rgba(117, 117, 117, 0.5);
 }
 
-  /* custom checkbox */
+/* custom checkbox */
 .register-form-checkbox-group {
   position: relative;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 8px;
 
-  width: 426px; 
+  width: 426px;
   height: 24px;
   margin-left: auto;
   margin-right: auto;
@@ -673,7 +744,7 @@ p {
 }
 
 .register-form-checkbox-link {
-  color: var(--selected-text-color)
+  color: var(--selected-text-color);
 }
 
 .register-form-checkbox-icon,
@@ -700,7 +771,7 @@ p {
 }
 
 /* submit button */
-.register-form-button {
+.register-form-btn {
   display: block;
 
   font-weight: 700;
@@ -714,11 +785,6 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
 
-/* identical to box height, or 188% */
-/* display: flex;
-align-items: center;
-text-align: center; */
-
   background-color: var(--button-bg-main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -726,20 +792,13 @@ text-align: center; */
   margin-left: auto;
   margin-right: auto;
 
-/* background: #2196F3;
-background: #188CE8; */
-
-/* 2196f3 */
-
   transition: background-color var(--main-transition);
 }
 
-.register-form-button:hover,
-.register-form-button:focus {
-  background-color: #188CE8;
+.register-form-btn:hover,
+.register-form-btn:focus {
+  background-color: #188ce8;
 }
-
-
 
 /* Portfolio page */
 .filters-list {
