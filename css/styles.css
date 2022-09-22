@@ -50,7 +50,8 @@ body {
 .header-navigation-link,
 .header-contacts-link,
 .address-list-link,
-.project-link {
+.project-link,
+.register-form-checkbox-link {
   text-decoration: inherit;
   color: inherit;
 }
@@ -589,7 +590,7 @@ p {
   .reg-checkbox-icon-checked {
   }
 
-
+  /* register form of modal window */
 .register-form-title {
   display: block;
   /* font-family: 'Roboto';
@@ -658,22 +659,36 @@ p {
   resize: none;
 
   margin-top: 4px;
+
+  outline-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
+  /* custom checkbox */
 .register-form-checkbox-group {
+  width: 426px; 
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+
   position: relative;
 }
 
 .register-form-checkbox {
+  position: absolute;
   visibility: hidden;
 }
 
 .register-form-checkbox-label {
-color: #757575;
+  display: inline-block;
+  width: 100%;
+
+  color: #757575;
 }
 
 .register-form-checkbox-link {
-
+  color: var(--selected-text-color)
 }
 
 .register-form-checkbox-icon,
@@ -685,7 +700,6 @@ color: #757575;
 }
 
 .register-form-checkbox-icon-checked {
-  /* visibility: hidden; */
   opacity: 0;
 }
 
