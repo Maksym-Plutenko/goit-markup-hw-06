@@ -741,7 +741,6 @@ p {
 }
 
 .register-form-checkbox {
-  /* visibility: hidden; */
   opacity: 0;
   position: absolute;
   z-index: -1;
@@ -767,31 +766,6 @@ p {
   
   transition: outline-color var(--main-transition);
 }
-
-/* .register-form-checkbox-icon-checked {
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  transform: translate(0, -50%);
-
-  transition: opacity var(--main-transition);
-} */
-
-/* .register-form-checkbox-icon-checked {
-  opacity: 0;
-} */
-
-/* .register-form-checkbox:checked
-  + .register-form-checkbox-label
-  .register-form-checkbox-icon-checked {
-  opacity: 1;
-} */
-
-/* .register-form-checkbox:checked 
-+ .register-form-checkbox-label 
-.register-form-checkbox-icon {
-  opacity: 0;
-} */
 
 .checked,
 .non-checked {
@@ -994,18 +968,3 @@ p {
   background-color: var(--selected-text-color);
   border-radius: 2px;
 }
-
-/* Visually-hidden style */
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
