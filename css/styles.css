@@ -740,12 +740,6 @@ p {
   margin-bottom: 30px;
 }
 
-.register-form-checkbox {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
-}
-
 .register-form-checkbox-label {
   position: relative;
   display: flex;
@@ -967,4 +961,19 @@ p {
 
   background-color: var(--selected-text-color);
   border-radius: 2px;
+}
+
+/* Class for hidden elements*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
